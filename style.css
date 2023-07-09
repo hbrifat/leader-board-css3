@@ -8,12 +8,14 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
     background: #ffffff;
     width: 870px;
+    margin-top: 21px;
 }
 
 hr{
@@ -105,3 +107,78 @@ hr{
     color: #562EFF;
     text-decoration: none;
 }
+
+
+/* Latest Course Section */
+
+.latest-course {
+    padding: 30px;
+}
+
+.latest-course .courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.latest-course .courses .course {
+    /* box-shadow: 10px 5px 5px lightgrey; */
+    box-shadow: 0 5px 8px rgb(0 0 0 / 0.1);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.latest-course .courses .course .thumbnail img {
+    width: 240px;
+    height: 141px;
+}
+
+.latest-course .course .course-title {
+    color: #1E1E1E;
+    font-size: 20.034px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+
+.latest-course .course .course-author {
+    color: #ED6B4F;
+    font-size: 14.691px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.latest-course .course .course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings {
+    font-size: 12px;
+}
+
+.ratings .fa-star.filled {
+    color: #FFC014;
+}
+
+.ratings .fa-star.empty {
+    color: #AEAEAE;
+}
+
+.latest-course .course .course-info .course-rating {
+    color: #A2A2A2;
+    font-size: 14.691px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.latest-course .course .course-info .course-duration{
+    border-radius: 14.691px;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    width: 94.826px;
+}
+

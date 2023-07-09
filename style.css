@@ -55,3 +55,53 @@ hr{
 .player h3{
     margin-left: 16px;
 }
+
+/* top-blogs */
+
+.top-blogs {
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.top-blogs .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 30px;
+}
+
+.top-blogs .blogs img {
+    width: 250x;
+    height: 110px;
+}
+
+.top-blogs .blogs .blog {
+    display: flex;
+}
+
+.top-blogs .blogs .blog .blog-info {
+    margin-left: 16px;
+}
+
+
+.top-blogs .blogs .blog .blog-title {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.top-blogs .blogs .blog .blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.top-blogs .blogs .blog .blog-author a {
+    color: #562EFF;
+    text-decoration: none;
+}
